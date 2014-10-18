@@ -35,7 +35,7 @@
 
 - name: Install modules with drush.
   command: >
-    drush en -y devel
+    drush en -y devel backup_migrate views views_ui transliteration features admin_menu
     chdir={{ drupal_core_path }}
   when: drupal_site.stat.exists == false
   sudo: no
